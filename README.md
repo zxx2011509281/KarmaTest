@@ -5,94 +5,61 @@
 
 http://www.cnblogs.com/greatluoluo/p/5680738.html
 
+2、使用
 
-2、怎么运行：
-	在文件夹karma_init下
-karma start karma.conf.js
+testJs下放入需要测试的js(test.js),检测规则js(jasmineTest.js);
 
+在文件夹karma_init下 Git Bash 运行 karma start karma.conf.js
 
-3、使用
-页面 点击debug,新页面F12，查看console
+启动后chrome页面 点击debug,新页面F12，查看console
 
-查看覆盖率进入文件夹coverage
+查看覆盖率进入文件夹coverage 查看index.html
 
-4、jasmineAPI
+3、jasmineAPI
 http://www.cnblogs.com/kbqncf/p/3795155.html
-	describe(string,function)
 
-	全局函数，接收两个参数
 
-	string:函数的描述
+	describe(string,function)  全局函数，接收两个参数
 
-	function:测试组函数
+		string:函数的描述
 
-	It(string,function)
+		function:测试组函数
 
-	一个测试specs,接收两个参数
+	It(string,function)    一个测试specs,接收两个参数
 
-	string:spces的名称
+		string:spces的名称
 
-	function:spces函数
+		function:spces函数
 
-	beforeEach(function)
+	beforeEach(function)   定义在一个describe的所有it执行前做的操作
 
-	定义在一个describe的所有it执行前做的操作
+	afterEach(function)    定义在一个describe的所有it执行后做的操作
 
-	afterEach(function)
+	toBe                   等同于===，比较变量
 
-	定义在一个describe的所有it执行后做的操作
+	toEqual                处理变量，数组，对象等等
 
-	toBe
+	toMatch                使用正则式进行匹配
 
-	等同于===，比较变量
+	toBeDefined            是否已声明且赋值
 
-	toEqual
+	toBeUndefined          是否未声明
 
-	处理变量，数组，对象等等
+	toBeNull               是否null
 
-	toMatch
+	toBeTruthy             如果转换为布尔值，是否为true
 
-	使用正则式进行匹配
+	toBeFalsy              如果转换为布尔值，是否为false
 
-	toBeDefined
+	toContain              数组中是否包含元素（值）。只能用于数组，不能用于对象
 
-	是否已声明且赋值
+	toBeLessThan           数值比较，小于
 
-	toBeUndefined
+	toBeGreaterThan        数值比较，大于
 
-	是否未声明
+	toBeCloseTo            数值比较时定义精度，先四舍五入后再比较
 
-	toBeNull
-
-	是否null
-
-	toBeTruthy   
-
-	如果转换为布尔值，是否为true
-
-	toBeFalsy    
-	
-	如果转换为布尔值，是否为false
-
-	toContain   
-
-	数组中是否包含元素（值）。只能用于数组，不能用于对象
-
-	toBeLessThan   
-
-	数值比较，小于
-
-	toBeGreaterThan   
-
-	数值比较，大于
-
-	toBeCloseTo   
-
-	数值比较时定义精度，先四舍五入后再比较
-
-	toThrow    
-
-	检验一个函数是否会抛出一个错误
+	toThrow                检验一个函数是否会抛出一个错误
 
 
 
@@ -109,7 +76,7 @@ http://www.cnblogs.com/kbqncf/p/3795155.html
 		});
 
 
-5、其他：
+4、其他：
 
 Karma init 用window自带工具启动，用Git Bash报错
 

@@ -15,9 +15,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        // '*.js'
-        '../testJs/jasmineTest.js',
-        '../testJs/test.js'
+        '*.js'//所有的js
+        //'../testJs/jasmineTest.js',//指定的js
+        //'../testJs/test.js'//指定的js
     ],
 
 
